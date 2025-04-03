@@ -2,9 +2,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import styles from "./ui/CoursePage.module.sass";
-import carldarryl from "./ui/images/carldarryl.jpg";
-import darryl from "./ui/images/darryl.jpg";
-import carl from "./ui/images/carl.jpg";
 
 export const courseData = {
   "easy-recipes": {
@@ -24,11 +21,11 @@ export const courseData = {
     ],
   },
   "tax": {
-    title: "ЛоЛ с первым апреля",
-    banner: carldarryl,
+    title: "Как платить налоги",
+    banner: "taxpaying",
     lessons: [
-      { number: 1, name: "Как встречаться с пиратом", path: "/course/tax/lesson-1", text:"Не стесняйтесь болтать и носите очки" , pictire:darryl},
-      { number: 2, name: "Как встречаться с шахтером", path: "/course/tax/lesson-2", text: "Большая душа и не важно что успели сделать в прошлом" , pictire:carl},
+      { number: 1, name: "Виды налогов", path: "/course/tax/lesson-1", text:"1) Процентный, 2)Фиксированный" },
+      { number: 2, name: "Группы налогов", path: "/course/tax/lesson-2", text: "Богачи и предприятие"},
     ],
   },
 };
