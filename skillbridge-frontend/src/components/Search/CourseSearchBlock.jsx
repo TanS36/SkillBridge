@@ -3,7 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./ui/Search.module.sass";
 
-const courses = [
+export const courses = [
   {
     name: "Самые лёгкие рецепты дома",
     color: "#28a745",
@@ -18,6 +18,11 @@ const courses = [
     name: "Как платить налоги",
     color: "#007bff",
     path: "/course/tax",
+  },
+  {
+    name: "Первый шаг к знакомству",
+    color: "#f4c542",
+    path: "/course/metting",
   },
 ];
 
